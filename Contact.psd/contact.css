@@ -1,0 +1,284 @@
+@import 'fonts.css';
+
+/* root start */
+:root {
+    --f400: 'Montserrat-Regular';
+    --f700: 'Montserrat-Bold';
+    --f500: 'Montserrat-Medium';
+    --white: #ffffff;
+    --blue: #007d2f;
+    --roboto500: 'Roboto-Medium';
+    --nunitosans-regular: 'NunitoSans-Regular';
+    --nunitosans-bold: 'NunitoSans-Bold'
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--f400);
+}
+
+.logo {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo_yellow {
+    color: var(--yellow);
+}
+.logo:hover {
+    color: var(--yellow);
+}
+.logo__icon {
+    font-size: 23px;
+    position: absolute;
+    top: 3px;
+    right: 6px;
+   
+}
+.dropdown-menu {
+    transform: translate3d(-15px,22px, 0) !important;
+}
+
+/* root end */
+/* *********************** */
+
+/* header start */
+.header__nav {
+    padding: 17px 0 18px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+}
+.nav__link {
+    color: #191919;
+    font-family: var(--f500);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 27px;
+    line-height: 9px;
+    transition: color 0.5s;
+    font-weight: 500;
+   
+}
+.nav__link:last-of-type {
+    margin-left: 0;
+}
+.nav__link:hover {
+    color: var(--blue);
+}
+.menu__icon {
+    color: blue;
+    border: 2px solid var(--blue);
+    padding: 3px 10px;
+    border-radius: 3px;
+    outline: none !important;
+    font-size: 10px;
+}
+.menu-btn {
+    outline: 0 !important;
+    padding: 0px;
+}
+.header__main {
+    background: #f6f6f6;
+    /* padding: 113px 0 111px; */
+}
+.header-main {
+    background: #f6f6f6;
+    padding: 100px 0; 
+  
+}
+.header__title {
+   
+    color: #171717;
+    font-size: 30px;
+    line-height: 22px;
+    font-family: var(--f500);
+}
+ .matn {
+    margin-top: 33px;
+    color: #787878;
+    font-family: var(--nunitosans-regular);
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.addres {
+    margin-top: 40px;
+    color: #171717;
+    font-size: 16px;
+    line-height: 12px;
+    font-family:var(--nunitosans-bold);
+}
+.Phone{
+    margin-top: 24px;
+    color: #171717;
+    font-family: var(--nunitosans-bold);
+    font-size: 16px;
+    line-height: 12px;
+}
+.Email {
+    margin-top: 24px;
+    color: #171717;
+    font-size: 16px;
+    line-height: 12px;
+    font-family:var(--nunitosans-bold); 
+}
+.Email {
+    margin-top: 24px;
+    color: #171717;
+    font-size: 16px;
+    line-height: 12px;
+    font-family:var(--nunitosans-bold); 
+}
+.fax {
+    margin-top: 24px;
+    color: #171717;
+    font-size: 16px;
+    line-height: 12px;
+    font-family:var(--nunitosans-bold); 
+}
+span {
+    line-height: 11px;
+    color: #787878;
+    font-size: 16px;
+    font-family: var(--nunitosans-regular);
+}
+img {
+    width: 100%;
+}
+.form-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-control {
+    border: none;
+    width: 100%;
+    resize: none;
+}
+.title {
+    margin: 30px 0 30px;
+}
+.message {
+    margin-top: 53px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 9px;
+    font-family: var(--f500);
+    transition: color 0.5s;
+    
+} 
+.send {
+    background: #007d2f;
+    padding: 23px 44px 22px 24px;
+    display: block;
+    max-width: max-content;
+    
+}
+.message:hover {
+    color: black;
+}
+.form-name{
+    display: flex;
+    justify-content: space-between;
+}
+.fm2{
+    width: 48%;
+}
+ .form-row {
+    display: flex;
+flex-direction: column;
+}
+
+
+
+/* header end */
+/* *********************** */
+/* main start */
+
+/* main end */
+/* *********************** */
+/* media start */ 
+@media(max-width: 1200px) {
+    .header-main {
+        flex-wrap: wrap;
+      }
+}
+@media(max-width: 991px) {
+    .nav-item {
+        text-align: right; 
+    }
+    
+    .nav__link {
+        display: block;
+        margin-top: 15px;
+    }
+    .dropdown-menu {
+        right: 10px !important;
+         left: auto !important; 
+         top: 10px !important;
+         font-size: 10px;
+     }
+    
+}
+@media(max-width: 600px) {
+    .header__title {
+        text-align: center;
+    }
+    .matn {
+        text-align: center;
+    }
+}
+@media(max-width:400px) {
+     .header__title {
+        font-size: 20px;
+    }
+    .matn {
+        font-size: 12px; 
+        line-height: 20px;
+    }
+     .addres {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .Phone {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .Email {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .fax {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .santa {
+        font-size: 12px;
+        line-height: 9px;
+    }
+    .nomer {
+        font-size: 12px;
+        line-height: 9px;
+    }
+    .email {
+        font-size: 12px;
+        line-height: 9px;
+    }
+    .number{
+        font-size: 12px;
+        line-height: 9px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    textarea::placeholder {
+        font-size: 12px;
+    }
+}
